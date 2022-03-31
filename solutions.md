@@ -26,7 +26,8 @@
 
   #    (c) read immediate text (i.e. "here document) until specified sequence. Write all the text (minus escape sequence) to stdout.
 
-  cat <<EOF
+  # cat <<EOF (without escapes)
+  cat \<\<EOF
   > Hello
   > World!
   > ... you can have more text here ...
