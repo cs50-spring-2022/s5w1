@@ -59,7 +59,9 @@
   echo < myfile.txt # prints nothing -- contents go to stdin, echo ignores stdin
 
   # like above, this also directs text to stdin, which echo ignores.
-  echo <<EOF
+
+  # echo <<EOF (without escapes)
+  echo \<\<EOF
   > Hello
   > world
   > EOF
